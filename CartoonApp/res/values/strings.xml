@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Daily Cartoon Go</string>
+    <string name="app_name">Daily Cartoons Go</string>
     <string name="package_name">com.rs.cartoon</string>
     <string name="email">my.dailyappgo@gmail.com</string>
-    <string name="mail">mailto:my.dailyappgo@gmail.com?subject=Daily Cartoon Go Feedback</string>
-    <string name="summary">Help us make Daily Cartoon Go better</string>
+    <string name="mail">mailto:my.dailyappgo@gmail.com?subject=Daily Cartoons Go Feedback</string>
+    <string name="summary">Help us make Daily Cartoons Go better</string>
     <string name="bannerID">ca-app-pub-6718707824713684/4448568250</string>
     <string name="interstitialID">ca-app-pub-6718707824713684/5925301452</string>
     <string name="apiKey">AIzaSyD2GSh-Q6xyzpd9WBieVvvufpLlsBoLwm8</string>
