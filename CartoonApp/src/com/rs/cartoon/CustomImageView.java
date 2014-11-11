@@ -1,4 +1,4 @@
-package com.rs.playlist;
+package com.rs.cartoon;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.ImageView;

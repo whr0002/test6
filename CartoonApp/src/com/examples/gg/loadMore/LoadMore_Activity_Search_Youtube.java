@@ -9,11 +9,8 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Spinner;
-
 
 import com.actionbarsherlock.internal.widget.IcsAdapterView;
 import com.actionbarsherlock.internal.widget.IcsSpinner;
@@ -22,7 +19,7 @@ import com.examples.gg.adapters.ListViewAdapter;
 import com.examples.gg.data.MyAsyncTask;
 import com.examples.gg.feedManagers.FeedManager_Base_v3;
 import com.examples.gg.feedManagers.FeedManager_Suggestion;
-import com.rs.playlist.R;
+import com.rs.cartoon.R;
 
 public class LoadMore_Activity_Search_Youtube extends LoadMore_Activity_Search
 		implements SearchView.OnQueryTextListener, ListView.OnItemClickListener {

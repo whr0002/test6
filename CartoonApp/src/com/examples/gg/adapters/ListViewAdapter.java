@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.rs.playlist.R;
+import com.rs.cartoon.R;
 
 public class ListViewAdapter extends ArrayAdapter<String> {
 

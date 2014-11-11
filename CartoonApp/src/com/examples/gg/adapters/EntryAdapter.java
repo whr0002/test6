@@ -15,7 +15,7 @@ import android.widget.TextView;
 import com.examples.gg.data.EntryItem;
 import com.examples.gg.data.Item;
 import com.examples.gg.data.SectionItem;
-import com.rs.playlist.R;
+import com.rs.cartoon.R;
 
 public class EntryAdapter extends ArrayAdapter<Item> {
 

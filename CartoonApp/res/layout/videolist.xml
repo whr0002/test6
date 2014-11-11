@@ -15,7 +15,7 @@
 
 
 
-        <com.rs.playlist.CustomImageView
+        <com.rs.cartoon.CustomImageView
             android:id="@+id/thumbnail"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"

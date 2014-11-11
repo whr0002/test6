@@ -26,7 +26,7 @@ import com.examples.gg.data.CustomSearchView;
 import com.examples.gg.data.MyAsyncTask;
 import com.examples.gg.feedManagers.FeedManager_Base_v3;
 import com.examples.gg.feedManagers.FeedManager_Suggestion;
-import com.rs.playlist.R;
+import com.rs.cartoon.R;
 
 public class SearchFragment extends LoadMore_Base implements
 		SearchView.OnQueryTextListener, ListView.OnItemClickListener {

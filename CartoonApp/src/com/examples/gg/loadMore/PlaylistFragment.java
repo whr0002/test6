@@ -10,7 +10,7 @@ import android.widget.ArrayAdapter;
 
 import com.actionbarsherlock.app.ActionBar;
 import com.examples.gg.feedManagers.FeedManager_Base_v3_PlaylistItem;
-import com.rs.playlist.R;
+import com.rs.cartoon.R;
 
 public class PlaylistFragment extends LoadMore_Base {
 

@@ -1,4 +1,4 @@
-package com.rs.playlist;
+package com.rs.cartoon;
 
 import java.util.ArrayList;
 
@@ -32,6 +32,8 @@ import com.examples.gg.data.SectionItem;
 import com.examples.gg.loadMore.FavoritesFragment;
 import com.examples.gg.loadMore.HistoryFragment;
 import com.examples.gg.loadMore.PlaylistFragment;
+import com.examples.gg.loadMore.SearchFragment;
+import com.examples.gg.loadMore.SearchResultFragment;
 import com.examples.gg.loadMore.SubscriptionFragment;
 import com.examples.gg.settings.SettingsActivity;
 
@@ -94,8 +96,25 @@ public class SideMenuActivity extends SherlockFragmentActivity {
 
 		// Feed
 		items.add(new SectionItem("Everyday's Feed"));
-		items.add(new EntryItem("Youtube Mix", "Your daily top tracks",
+		items.add(new EntryItem("What's New", "Your daily top cartoon",
 				R.drawable.live));
+
+		// Music Playlists
+		items.add(new SectionItem("Popular Cartoon Playlists"));
+		items.add(new EntryItem("Looney Tunes", null, R.drawable.looney_tunes96));
+		items.add(new EntryItem("The Simpsons", null, R.drawable.simpsons96));
+		items.add(new EntryItem("Tom and Jerry", null, R.drawable.tom_jerry96));
+		items.add(new EntryItem("Pokemon", null, R.drawable.pokemon96));
+		items.add(new EntryItem("Popeye", null, R.drawable.popeye96));
+		items.add(new EntryItem("Oggy", null, R.drawable.oggy96));
+		items.add(new EntryItem("Larva", null, R.drawable.larva96));
+		items.add(new EntryItem("Simon's Cat", null, R.drawable.simon96));
+		items.add(new EntryItem("Oscar's Oasis", null, R.drawable.oscars_oasis96));
+		items.add(new EntryItem("Doreamon", null, R.drawable.doraemon96));
+		items.add(new EntryItem("Phineas and Ferb", null, R.drawable.phineas96));
+		items.add(new EntryItem("Walt Disney Kanal", null, R.drawable.walt96));
+		items.add(new EntryItem("Bernard Bear", null, R.drawable.bernard_bear96));
+		items.add(new EntryItem("Disney Cartoon", null, R.drawable.disney96));
 
 		// Favorites
 		items.add(new SectionItem("My Youtube"));
@@ -104,16 +123,8 @@ public class SideMenuActivity extends SherlockFragmentActivity {
 		items.add(new EntryItem("Subscriptions", "Local subscriptions",
 				R.drawable.upcoming));
 		items.add(new EntryItem("History", "Watched videos", R.drawable.minutes));
-
-		// Music Playlists
-		items.add(new SectionItem("Popular Music Playlists"));
-		items.add(new EntryItem("Rihanna", null, R.drawable.highlights));
-		items.add(new EntryItem("One Direction", null, R.drawable.highlights));
-		items.add(new EntryItem("Katy Perry", null, R.drawable.highlights));
-		items.add(new EntryItem("Justin Bieber", null, R.drawable.highlights));
-		items.add(new EntryItem("Taylor Swift", null, R.drawable.highlights));
-		items.add(new EntryItem("Bruno Mars", null, R.drawable.highlights));
-
+		
+		
 		// "About" section
 		items.add(new SectionItem("About App"));
 		items.add(new EntryItem("Feedback", "Help us make it better",
@@ -165,8 +176,8 @@ public class SideMenuActivity extends SherlockFragmentActivity {
 			selectItem(1);
 
 		}
-		isFirstTimeUser();
-//		openDrawerOnStart();
+//		isFirstTimeUser();
+		openDrawerOnStart();
 //		this.validatingTips(this);
 
 	}
@@ -296,50 +307,86 @@ public class SideMenuActivity extends SherlockFragmentActivity {
 		// Section divider case 0------------------------
 		case 1:
 			// News
-			ft.replace(R.id.content_frame, new PlaylistFragment("Youtube Mix",
-					"MCUS"));
-			break;
-		// Section divider case 2------------------------
-		case 3:
-			ft.replace(R.id.content_frame, new FavoritesFragment());
+			ft.replace(R.id.content_frame, new SearchResultFragment("cartoon",
+					"What's New"));
 			break;
 
-		case 4:
-			ft.replace(R.id.content_frame, new SubscriptionFragment());
-			break;
-		case 5:
-			ft.replace(R.id.content_frame, new HistoryFragment());
-			break;
 
 		// Section divider case 6------------------------
 
+		case 3:
+			ft.replace(R.id.content_frame, new PlaylistFragment("Looney Tunes",
+					"PL7spvnQF9O-ia-SPOzQNReIJH4xH8bVWE"));
+			break;
+		case 4:
+			ft.replace(R.id.content_frame, new PlaylistFragment(
+					"The Simpsons", "PLeY7w-PAPTxgP6qoysPxXoO1iFfeNCFsf"));
+			break;
+		case 5:
+			ft.replace(R.id.content_frame, new PlaylistFragment("Tom and Jerry",
+					"PLs3AzkwUIqNArfghgnNLnDNHKzWszMDs9"));
+			break;
+		case 6:
+			ft.replace(R.id.content_frame, new PlaylistFragment(
+					"Pokemon", "PL71D58CAD74DBEE52"));
+			break;
 		case 7:
-			ft.replace(R.id.content_frame, new PlaylistFragment("Rihanna",
-					"PL59B464DFF08AEE66"));
+			ft.replace(R.id.content_frame, new PlaylistFragment("Popeye",
+					"PLT7wVCf9HG9pz4jSEkAhyoXfmIXlTd09s"));
 			break;
 		case 8:
-			ft.replace(R.id.content_frame, new PlaylistFragment(
-					"One Direction", "PLy5C65bvjyurvHyQdB8KtjB2M_HQixXlA"));
+			ft.replace(R.id.content_frame, new PlaylistFragment("Oggy",
+					"PLdQkwwBqOOtg5v-uWJFIAbeyOJbc4RIP7"));
 			break;
+			
 		case 9:
-			ft.replace(R.id.content_frame, new PlaylistFragment("Katy Perry",
-					"PLwn8mT6-a4yL8IUoORhtMDH6bsdv8en80"));
+			ft.replace(R.id.content_frame, new PlaylistFragment("Larva",
+					"PLjULSdBF6OvSxSqTDnwhfjulS_gUruDar"));
 			break;
+//PLagyxbJHFyL11iTef4c6ALIDsD--nXkel
+			
 		case 10:
-			ft.replace(R.id.content_frame, new PlaylistFragment(
-					"Justin Bieber", "PL623E00CA581C3D83"));
+			ft.replace(R.id.content_frame, new PlaylistFragment("Simon's Cat",
+					"PLagyxbJHFyL11iTef4c6ALIDsD--nXkel"));
 			break;
 		case 11:
-			ft.replace(R.id.content_frame, new PlaylistFragment("Taylor Swift",
-					"PLdnEKz0ib5DD8X0JeJ9MgbTLKNESWNlRe"));
+			ft.replace(R.id.content_frame, new PlaylistFragment("Oscar's Oasis",
+					"PLbekB6Y6sLlO5qzSZ7oGz8jhsnFFEJIbR"));
 			break;
 		case 12:
-			ft.replace(R.id.content_frame, new PlaylistFragment("Bruno Mars",
-					"PL6A33993EF508A934"));
+			ft.replace(R.id.content_frame, new PlaylistFragment("Doreamon",
+					"PLEVQBj6qUT-4lreFYpleoZJLIR5ZGVu8a"));
+			break;
+		case 13:
+			ft.replace(R.id.content_frame, new PlaylistFragment("Phineas and Ferb",
+					"PLfJpfTZK5SWB1IJtVAfZAqOgyF4EEzT9g"));
+			break;
+		case 14:
+			ft.replace(R.id.content_frame, new PlaylistFragment("Walt Disney Kanal",
+					"PL7F8CFCA89AC9F7C7"));
+			break;
+		case 15:
+			ft.replace(R.id.content_frame, new PlaylistFragment("Bernard Bear",
+					"PL2EAC06C18FE042F6"));
+			break;
+		case 16:
+			ft.replace(R.id.content_frame, new PlaylistFragment("Disney Cartoon",
+					"PLO4o8yV-G3LN4PAkp_-l-jLgyQU2w_6Y9"));
 			break;
 
+		// Section divider------------------------
+		case 18:
+			ft.replace(R.id.content_frame, new FavoritesFragment());
+			break;
+
+		case 19:
+			ft.replace(R.id.content_frame, new SubscriptionFragment());
+			break;
+		case 20:
+			ft.replace(R.id.content_frame, new HistoryFragment());
+			break;
 		// Section divider case 12------------------------
-		case 14:
+		case 22:
 			// Feedback
 
 			Intent email = new Intent(Intent.ACTION_VIEW);
@@ -348,7 +395,7 @@ public class SideMenuActivity extends SherlockFragmentActivity {
 			// startActivity(email);
 			break;
 
-		case 15:
+		case 23:
 			// Share Dota2TV
 			Intent sendIntent = new Intent();
 			sendIntent.setAction(Intent.ACTION_SEND);
@@ -361,7 +408,7 @@ public class SideMenuActivity extends SherlockFragmentActivity {
 			// startActivity(sendIntent);
 			break;
 
-		case 16:
+		case 24:
 			// Rate Dota2TV
 			Intent rateIntent = new Intent(Intent.ACTION_VIEW);
 			// Try Google play

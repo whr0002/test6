@@ -42,7 +42,7 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.display.RoundedBitmapDisplayer;
 import com.nostra13.universalimageloader.core.listener.PauseOnScrollListener;
-import com.rs.playlist.R;
+import com.rs.cartoon.R;
 
 public class LoadMore_Activity_Base extends SherlockActivity implements OnNavigationListener {
 	protected LoadMoreListView myLoadMoreListView;
