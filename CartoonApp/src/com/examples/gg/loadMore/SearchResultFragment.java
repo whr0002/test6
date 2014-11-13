@@ -46,7 +46,7 @@ public class SearchResultFragment extends LoadMore_Base {
 			// "https://gdata.youtube.com/feeds/api/videos?q="+URLEncoder.encode(q,"UTF-8")+"&orderby=relevance&start-index=1&max-results=10&v=2&alt=json";
 			api = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&order=relevance&q="
 					+ URLEncoder.encode(q, "UTF-8")
-					+ "&type=video&key="
+					+ "&type=video&videoDuration=long&key="
 					+ browserKey;
 		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();

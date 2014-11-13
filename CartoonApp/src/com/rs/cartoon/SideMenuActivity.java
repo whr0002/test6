@@ -96,7 +96,7 @@ public class SideMenuActivity extends SherlockFragmentActivity {
 
 		// Feed
 		items.add(new SectionItem("Everyday's Feed"));
-		items.add(new EntryItem("What's New", "Your daily top cartoon",
+		items.add(new EntryItem("Animated Movies", "Your daily top cartoons",
 				R.drawable.live));
 
 		// Music Playlists
@@ -115,9 +115,10 @@ public class SideMenuActivity extends SherlockFragmentActivity {
 		items.add(new EntryItem("Walt Disney Kanal", null, R.drawable.walt96));
 		items.add(new EntryItem("Bernard Bear", null, R.drawable.bernard_bear96));
 		items.add(new EntryItem("Disney Cartoon", null, R.drawable.disney96));
-
+		items.add(new EntryItem("Soundtracks", null, R.drawable.soundtrack96));
+		
 		// Favorites
-		items.add(new SectionItem("My Youtube"));
+		items.add(new SectionItem("My Cartoons"));
 //		items.add(new EntryItem("Search", "Videos, channels, Playlists", R.drawable.abs__ic_search));
 		items.add(new EntryItem("Favorites", "Things I like", R.drawable.medal));
 		items.add(new EntryItem("Subscriptions", "Local subscriptions",
@@ -307,8 +308,8 @@ public class SideMenuActivity extends SherlockFragmentActivity {
 		// Section divider case 0------------------------
 		case 1:
 			// News
-			ft.replace(R.id.content_frame, new SearchResultFragment("cartoon",
-					"What's New"));
+			ft.replace(R.id.content_frame, new SearchResultFragment("animation movies 2014",
+					"Animated Movies"));
 			break;
 
 
@@ -373,20 +374,23 @@ public class SideMenuActivity extends SherlockFragmentActivity {
 			ft.replace(R.id.content_frame, new PlaylistFragment("Disney Cartoon",
 					"PLO4o8yV-G3LN4PAkp_-l-jLgyQU2w_6Y9"));
 			break;
-
+		case 17:
+			ft.replace(R.id.content_frame, new PlaylistFragment("Soundtracks",
+					"PLdo8R2E46P3n2FJbY-OqRidxD4p72fvDr"));
+			break;
 		// Section divider------------------------
-		case 18:
+		case 19:
 			ft.replace(R.id.content_frame, new FavoritesFragment());
 			break;
 
-		case 19:
+		case 20:
 			ft.replace(R.id.content_frame, new SubscriptionFragment());
 			break;
-		case 20:
+		case 21:
 			ft.replace(R.id.content_frame, new HistoryFragment());
 			break;
 		// Section divider case 12------------------------
-		case 22:
+		case 23:
 			// Feedback
 
 			Intent email = new Intent(Intent.ACTION_VIEW);
@@ -395,7 +399,7 @@ public class SideMenuActivity extends SherlockFragmentActivity {
 			// startActivity(email);
 			break;
 
-		case 23:
+		case 24:
 			// Share Dota2TV
 			Intent sendIntent = new Intent();
 			sendIntent.setAction(Intent.ACTION_SEND);
@@ -408,7 +412,7 @@ public class SideMenuActivity extends SherlockFragmentActivity {
 			// startActivity(sendIntent);
 			break;
 
-		case 24:
+		case 25:
 			// Rate Dota2TV
 			Intent rateIntent = new Intent(Intent.ACTION_VIEW);
 			// Try Google play
