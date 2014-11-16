@@ -3,6 +3,8 @@ package com.examples.gg.loadMore;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
+import android.os.Bundle;
+
 import com.examples.gg.feedManagers.FeedManager_Base_v3;
 
 public class SearchResultFragment extends LoadMore_Base {
@@ -11,11 +13,28 @@ public class SearchResultFragment extends LoadMore_Base {
 	private String mTitle;
 	private String api;
 
-	public SearchResultFragment(String query, String title) {
-		this.mQuery = query;
-		this.mTitle = title;
+//	public SearchResultFragment(){}
+//	public SearchResultFragment(String query, String title) {
+//		this.mQuery = query;
+//		this.mTitle = title;
+//	}
+	public static final SearchResultFragment newInstance(String query, String title)
+	{
+		SearchResultFragment f = new SearchResultFragment();
+	    Bundle bdl = new Bundle(2);
+	    bdl.putString("query", query);
+	    bdl.putString("title", title);
+	    f.setArguments(bdl);
+	    return f;
 	}
-
+	
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        this.mQuery = getArguments().getString("query");
+        this.mTitle = getArguments().getString("title");
+    }
+	
 	@Override
 	public void Initializing() {
 		if (mTitle != null) {

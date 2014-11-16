@@ -109,23 +109,24 @@ public class SideMenuActivity extends SherlockFragmentActivity {
 		items.add(new EntryItem("Oggy", null, R.drawable.oggy96));
 		items.add(new EntryItem("Larva", null, R.drawable.larva96));
 		items.add(new EntryItem("Simon's Cat", null, R.drawable.simon96));
-		items.add(new EntryItem("Oscar's Oasis", null, R.drawable.oscars_oasis96));
+		items.add(new EntryItem("Oscar's Oasis", null,
+				R.drawable.oscars_oasis96));
 		items.add(new EntryItem("Doreamon", null, R.drawable.doraemon96));
 		items.add(new EntryItem("Phineas and Ferb", null, R.drawable.phineas96));
 		items.add(new EntryItem("Walt Disney Kanal", null, R.drawable.walt96));
 		items.add(new EntryItem("Bernard Bear", null, R.drawable.bernard_bear96));
 		items.add(new EntryItem("Disney Cartoon", null, R.drawable.disney96));
 		items.add(new EntryItem("Soundtracks", null, R.drawable.soundtrack96));
-		
+
 		// Favorites
 		items.add(new SectionItem("My Cartoons"));
-//		items.add(new EntryItem("Search", "Videos, channels, Playlists", R.drawable.abs__ic_search));
+		// items.add(new EntryItem("Search", "Videos, channels, Playlists",
+		// R.drawable.abs__ic_search));
 		items.add(new EntryItem("Favorites", "Things I like", R.drawable.medal));
 		items.add(new EntryItem("Subscriptions", "Local subscriptions",
 				R.drawable.upcoming));
 		items.add(new EntryItem("History", "Watched videos", R.drawable.minutes));
-		
-		
+
 		// "About" section
 		items.add(new SectionItem("About App"));
 		items.add(new EntryItem("Feedback", "Help us make it better",
@@ -177,9 +178,9 @@ public class SideMenuActivity extends SherlockFragmentActivity {
 			selectItem(1);
 
 		}
-//		isFirstTimeUser();
+		// isFirstTimeUser();
 		openDrawerOnStart();
-//		this.validatingTips(this);
+		// this.validatingTips(this);
 
 	}
 
@@ -308,74 +309,73 @@ public class SideMenuActivity extends SherlockFragmentActivity {
 		// Section divider case 0------------------------
 		case 1:
 			// News
-			ft.replace(R.id.content_frame, new SearchResultFragment("animation movies 2014",
-					"What's New"));
+			ft.replace(R.id.content_frame, SearchResultFragment.newInstance(
+					"animation movies 2014", "What's New"));
 			break;
-
 
 		// Section divider case 6------------------------
 
 		case 3:
-			ft.replace(R.id.content_frame, new PlaylistFragment("Looney Tunes",
+			ft.replace(R.id.content_frame, PlaylistFragment.newInstance("Looney Tunes",
 					"PL7spvnQF9O-ia-SPOzQNReIJH4xH8bVWE"));
 			break;
 		case 4:
-			ft.replace(R.id.content_frame, new PlaylistFragment(
-					"The Simpsons", "PLeY7w-PAPTxgP6qoysPxXoO1iFfeNCFsf"));
+			ft.replace(R.id.content_frame, PlaylistFragment.newInstance("The Simpsons",
+					"PLeY7w-PAPTxgP6qoysPxXoO1iFfeNCFsf"));
 			break;
 		case 5:
-			ft.replace(R.id.content_frame, new PlaylistFragment("Tom and Jerry",
-					"PLs3AzkwUIqNArfghgnNLnDNHKzWszMDs9"));
+			ft.replace(R.id.content_frame, PlaylistFragment.newInstance(
+					"Tom and Jerry", "PLs3AzkwUIqNArfghgnNLnDNHKzWszMDs9"));
 			break;
 		case 6:
-			ft.replace(R.id.content_frame, new PlaylistFragment(
-					"Pokemon", "PL71D58CAD74DBEE52"));
+			ft.replace(R.id.content_frame, PlaylistFragment.newInstance("Pokemon",
+					"PL71D58CAD74DBEE52"));
 			break;
 		case 7:
-			ft.replace(R.id.content_frame, new PlaylistFragment("Popeye",
+			ft.replace(R.id.content_frame, PlaylistFragment.newInstance("Popeye",
 					"PLT7wVCf9HG9pz4jSEkAhyoXfmIXlTd09s"));
 			break;
 		case 8:
-			ft.replace(R.id.content_frame, new PlaylistFragment("Oggy",
+			ft.replace(R.id.content_frame, PlaylistFragment.newInstance("Oggy",
 					"PLdQkwwBqOOtg5v-uWJFIAbeyOJbc4RIP7"));
 			break;
-			
+
 		case 9:
-			ft.replace(R.id.content_frame, new PlaylistFragment("Larva",
+			ft.replace(R.id.content_frame, PlaylistFragment.newInstance("Larva",
 					"PLjULSdBF6OvSxSqTDnwhfjulS_gUruDar"));
 			break;
-//PLagyxbJHFyL11iTef4c6ALIDsD--nXkel
-			
+		// PLagyxbJHFyL11iTef4c6ALIDsD--nXkel
+
 		case 10:
-			ft.replace(R.id.content_frame, new PlaylistFragment("Simon's Cat",
+			ft.replace(R.id.content_frame, PlaylistFragment.newInstance("Simon's Cat",
 					"PLagyxbJHFyL11iTef4c6ALIDsD--nXkel"));
 			break;
 		case 11:
-			ft.replace(R.id.content_frame, new PlaylistFragment("Oscar's Oasis",
-					"PLbekB6Y6sLlO5qzSZ7oGz8jhsnFFEJIbR"));
+			ft.replace(R.id.content_frame, PlaylistFragment.newInstance(
+					"Oscar's Oasis", "PLbekB6Y6sLlO5qzSZ7oGz8jhsnFFEJIbR"));
 			break;
 		case 12:
-			ft.replace(R.id.content_frame, new PlaylistFragment("Doreamon",
+			ft.replace(R.id.content_frame, PlaylistFragment.newInstance("Doreamon",
 					"PLEVQBj6qUT-4lreFYpleoZJLIR5ZGVu8a"));
 			break;
 		case 13:
-			ft.replace(R.id.content_frame, new PlaylistFragment("Phineas and Ferb",
-					"PLfJpfTZK5SWB1IJtVAfZAqOgyF4EEzT9g"));
+			ft.replace(R.id.content_frame, PlaylistFragment.newInstance(
+					"Phineas and Ferb", "PLfJpfTZK5SWB1IJtVAfZAqOgyF4EEzT9g"));
 			break;
 		case 14:
-			ft.replace(R.id.content_frame, new PlaylistFragment("Walt Disney Kanal",
-					"PL7F8CFCA89AC9F7C7"));
+			ft.replace(R.id.content_frame, PlaylistFragment.newInstance(
+					"Walt Disney Kanal", "PL7F8CFCA89AC9F7C7"));
 			break;
 		case 15:
-			ft.replace(R.id.content_frame, new PlaylistFragment("Bernard Bear",
+			ft.replace(R.id.content_frame, PlaylistFragment.newInstance("Bernard Bear",
 					"PL2EAC06C18FE042F6"));
 			break;
 		case 16:
-			ft.replace(R.id.content_frame, new PlaylistFragment("Disney Cartoon",
-					"PLO4o8yV-G3LN4PAkp_-l-jLgyQU2w_6Y9"));
+			ft.replace(R.id.content_frame, PlaylistFragment.newInstance(
+					"Disney Cartoon", "PLO4o8yV-G3LN4PAkp_-l-jLgyQU2w_6Y9"));
 			break;
 		case 17:
-			ft.replace(R.id.content_frame, new PlaylistFragment("Soundtracks",
+			ft.replace(R.id.content_frame, PlaylistFragment.newInstance("Soundtracks",
 					"PLdo8R2E46P3n2FJbY-OqRidxD4p72fvDr"));
 			break;
 		// Section divider------------------------

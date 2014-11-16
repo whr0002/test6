@@ -3,6 +3,7 @@ package com.examples.gg.loadMore;
 import java.util.Collections;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -17,11 +18,28 @@ public class PlaylistFragment extends LoadMore_Base {
 	private String mPlaylistID;
 	private String mTitle;
 
-	public PlaylistFragment(String title, String playlistId) {
-		this.mPlaylistID = playlistId;
-		this.mTitle = title;
+//	public PlaylistFragment(){}
+//	public PlaylistFragment(String title, String playlistId) {
+//		this.mPlaylistID = playlistId;
+//		this.mTitle = title;
+//	}
+	public static final PlaylistFragment newInstance(String title, String playlistId)
+	{
+		PlaylistFragment f = new PlaylistFragment();
+	    Bundle bdl = new Bundle(2);
+	    bdl.putString("title", title);
+	    bdl.putString("playlistId", playlistId);
+	    f.setArguments(bdl);
+	    return f;
 	}
-
+	
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+     
+        this.mTitle = getArguments().getString("title");
+        this.mPlaylistID = getArguments().getString("playlistId");
+    }
 	@Override
 	public void Initializing() {
 		abTitle = mTitle;
