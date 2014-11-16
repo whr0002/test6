@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Daily Cartoons Go</string>
-    <string name="package_name">com.rs.cartoon</string>
+    <string name="app_name">Daily Cartoons Start</string>
+    <string name="package_name">com.rs.cartoons</string>
     <string name="email">my.dailyappgo@gmail.com</string>
-    <string name="mail">mailto:my.dailyappgo@gmail.com?subject=Daily Cartoons Go Feedback</string>
-    <string name="summary">Help us make Daily Cartoons Go better</string>
-    <string name="bannerID">ca-app-pub-6718707824713684/4448568250</string>
-    <string name="interstitialID">ca-app-pub-6718707824713684/5925301452</string>
-    <string name="apiKey">AIzaSyD2GSh-Q6xyzpd9WBieVvvufpLlsBoLwm8</string>
+    <string name="mail">mailto:my.dailyappgo@gmail.com?subject=Daily Cartoons Start Feedback</string>
+    <string name="summary">Help us make Daily Cartoons Start better</string>
+    <string name="bannerID">ca-app-pub-6718707824713684/4480104254</string>
+    <string name="interstitialID">ca-app-pub-6718707824713684/5956837452</string>
+    <string name="apiKey">AIzaSyCvfPrt7So_LB4BfXEiKHifKfoThLAADVQ</string>
     <string name="browserKey">AIzaSyBxDGDefxiC2KX32JLN2P0wX8DjLv54wKE</string>
     <string name="numOfResults">20</string>
     <string name="messageForEmptySubs">You have no subscriptions right now. When you find a channel and add the channel in Favorites, it will automatically subscribes the channel for you.</string>

@@ -18,7 +18,7 @@ import com.examples.gg.data.CustomSearchView;
 import com.examples.gg.data.Video;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.rs.cartoon.R;
+import com.rs.cartoons.R;
 
 public class HistoryFragment extends FavoritesFragment {
 	private VaaForHistory vaah;

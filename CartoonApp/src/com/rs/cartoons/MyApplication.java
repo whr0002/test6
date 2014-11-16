@@ -1,4 +1,4 @@
-package com.rs.cartoon;
+package com.rs.cartoons;
 
 import java.util.HashMap;
 

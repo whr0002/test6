@@ -1,4 +1,4 @@
-package com.rs.cartoon;
+package com.rs.cartoons;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.ImageView;

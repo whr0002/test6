@@ -19,7 +19,7 @@ import com.examples.gg.adapters.ListViewAdapter;
 import com.examples.gg.data.MyAsyncTask;
 import com.examples.gg.feedManagers.FeedManager_Base_v3;
 import com.examples.gg.feedManagers.FeedManager_Suggestion;
-import com.rs.cartoon.R;
+import com.rs.cartoons.R;
 
 public class LoadMore_Activity_Search_Youtube extends LoadMore_Activity_Search
 		implements SearchView.OnQueryTextListener, ListView.OnItemClickListener {

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.rs.cartoon;
+package com.rs.cartoons;
 
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;

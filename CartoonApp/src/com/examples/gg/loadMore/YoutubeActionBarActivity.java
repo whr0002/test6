@@ -35,7 +35,7 @@ import com.google.android.youtube.player.YouTubePlayer.Provider;
 import com.google.android.youtube.player.YouTubePlayerSupportFragment;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.rs.cartoon.R;
+import com.rs.cartoons.R;
 
 public class YoutubeActionBarActivity extends SherlockFragmentActivity
 		implements YouTubePlayer.OnInitializedListener {

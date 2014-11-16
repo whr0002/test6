@@ -9,7 +9,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.TextView;
 
-import com.rs.cartoon.R;
+import com.rs.cartoons.R;
 
 public class Dialog_Libraries extends DialogPreference {
 

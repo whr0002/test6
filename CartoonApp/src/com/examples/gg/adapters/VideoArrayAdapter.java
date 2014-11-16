@@ -39,7 +39,7 @@ import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
 import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
 import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;
 import com.nostra13.universalimageloader.utils.StorageUtils;
-import com.rs.cartoon.R;
+import com.rs.cartoons.R;
 
 public class VideoArrayAdapter extends ArrayAdapter<Video> {
 

@@ -17,7 +17,7 @@ import com.examples.gg.data.Video;
 import com.examples.gg.feedManagers.FeedManager_Base_v3_PlaylistItem;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.rs.cartoon.R;
+import com.rs.cartoons.R;
 
 //import com.examples.gg.twitchplayers.VideoBuffer;
 
