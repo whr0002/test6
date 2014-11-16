@@ -32,10 +32,11 @@ import com.examples.gg.data.SectionItem;
 import com.examples.gg.loadMore.FavoritesFragment;
 import com.examples.gg.loadMore.HistoryFragment;
 import com.examples.gg.loadMore.PlaylistFragment;
-import com.examples.gg.loadMore.SearchFragment;
 import com.examples.gg.loadMore.SearchResultFragment;
 import com.examples.gg.loadMore.SubscriptionFragment;
 import com.examples.gg.settings.SettingsActivity;
+import com.google.android.gms.analytics.GoogleAnalytics;
+
 
 public class SideMenuActivity extends SherlockFragmentActivity {
 
@@ -62,18 +63,8 @@ public class SideMenuActivity extends SherlockFragmentActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.drawer_main);
 
-		// Create the interstitial
-		// interstitial = new InterstitialAd(this,
-		// "ca-app-pub-6718707824713684/7369125856");
-
-		// Create ad request
-		// AdRequest adRequest = new AdRequest();
-		// adRequest.addTestDevice("5E4CA696BEB736E734DD974DD296F11A");
-		// Begin loading your interstitial
-		// interstitial.loadAd(adRequest);
-
-		// Set Ad Listener to use the callbacks below
-		// interstitial.setAdListener(this);
+		((MyApplication) getApplication()).getTracker(MyApplication.TrackerName.APP_TRACKER);
+		
 		appName = getResources().getString(R.string.app_name);
 		packageName = getResources().getString(R.string.package_name);
 		mail = getResources().getString(R.string.mail);
@@ -520,5 +511,18 @@ public class SideMenuActivity extends SherlockFragmentActivity {
 		// }
 		return super.onKeyDown(keyCode, event);
 	}
+	
+	@Override
+	public void onStart(){
+		super.onStart();
+		//Get an Analytics tracker to report app starts & uncaught exceptions etc.
+		GoogleAnalytics.getInstance(this).reportActivityStart(this);
 
+	}
+	
+	@Override
+	public void onStop(){
+		super.onStart();
+		GoogleAnalytics.getInstance(this).reportActivityStop(this);
+	}
 }
