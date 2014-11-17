@@ -87,7 +87,7 @@ public class SideMenuActivity extends SherlockFragmentActivity {
 
 		// Feed
 		items.add(new SectionItem("Everyday's Feed"));
-		items.add(new EntryItem("What's New", "Your daily top cartoons",
+		items.add(new EntryItem("What's New", "Latest cartoon trailers",
 				R.drawable.live));
 
 		// Music Playlists
@@ -301,7 +301,7 @@ public class SideMenuActivity extends SherlockFragmentActivity {
 		case 1:
 			// News
 			ft.replace(R.id.content_frame, SearchResultFragment.newInstance(
-					"animation movies 2014", "What's New"));
+					"cartoons trailers", "What's New"));
 			break;
 
 		// Section divider case 6------------------------
