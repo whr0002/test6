@@ -5,7 +5,7 @@ import android.os.Bundle;
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockPreferenceActivity;
 import com.actionbarsherlock.view.MenuItem;
-import com.rs.cartoons.R;
+import com.rs.cartoonss.R;
 
 public class SettingsActivity extends SherlockPreferenceActivity {
 	private ActionBar mActionBar;

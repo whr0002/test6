@@ -1,4 +1,4 @@
-package com.rs.cartoons;
+package com.rs.cartoonss;
 
 	
 	import java.io.IOException;

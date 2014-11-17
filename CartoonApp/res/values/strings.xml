@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">Daily Cartoons Start</string>
-    <string name="package_name">com.rs.cartoons</string>
+    <string name="package_name">com.rs.cartoonss</string>
     <string name="email">my.dailyappgo@gmail.com</string>
     <string name="mail">mailto:my.dailyappgo@gmail.com?subject=Daily Cartoons Start Feedback</string>
     <string name="summary">Help us make Daily Cartoons Start better</string>
