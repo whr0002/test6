@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Daily Cartoons Start</string>
-    <string name="package_name">com.rs.cartoonss</string>
+    <string name="app_name">Daily Cartoons TV</string>
+    <string name="package_name">com.rs.dct</string>
     <string name="email">my.dailyappgo@gmail.com</string>
-    <string name="mail">mailto:my.dailyappgo@gmail.com?subject=Daily Cartoons Start Feedback</string>
-    <string name="summary">Help us make Daily Cartoons Start better</string>
-    <string name="bannerID">ca-app-pub-6718707824713684/4480104254</string>
-    <string name="interstitialID">ca-app-pub-6718707824713684/5956837452</string>
-    <string name="apiKey">AIzaSyCvfPrt7So_LB4BfXEiKHifKfoThLAADVQ</string>
-    <string name="browserKey">AIzaSyBxDGDefxiC2KX32JLN2P0wX8DjLv54wKE</string>
+    <string name="mail">mailto:my.dailyappgo@gmail.com?subject=Daily Cartoons TV Feedback</string>
+    <string name="summary">Help us make Daily Cartoons TV better</string>
+    <string name="bannerID">ca-app-pub-6718707824713684/1524050650</string>
+    <string name="interstitialID">ca-app-pub-6718707824713684/3000783852</string>
+    <string name="apiKey">AIzaSyABwPxfo9F0AHrKn_H-W9LeKLpqYKmELGs</string>
+    <string name="browserKey">AIzaSyBk0k0p7XEb0QckMyuckGMIuydeWJseJYE</string>
     <string name="numOfResults">20</string>
     <string name="messageForEmptySubs">You have no subscriptions right now. When you find a channel and add the channel in Favorites, it will automatically subscribes the channel for you.</string>
     

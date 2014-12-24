@@ -11,7 +11,7 @@ import android.widget.ArrayAdapter;
 
 import com.actionbarsherlock.app.ActionBar;
 import com.examples.gg.feedManagers.FeedManager_Base_v3_PlaylistItem;
-import com.rs.cartoonss.R;
+import com.rs.dct.R;
 
 public class PlaylistFragment extends LoadMore_Base {
 

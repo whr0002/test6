@@ -1,4 +1,4 @@
-package com.rs.cartoonss;
+package com.rs.dct;
 
 import java.util.ArrayList;
 
@@ -92,22 +92,22 @@ public class SideMenuActivity extends SherlockFragmentActivity {
 
 		// Music Playlists
 		items.add(new SectionItem("Popular Cartoon Playlists"));
-		items.add(new EntryItem("Looney Tunes", null, R.drawable.looney_tunes96));
-		items.add(new EntryItem("The Simpsons", null, R.drawable.simpsons96));
-		items.add(new EntryItem("Tom and Jerry", null, R.drawable.tom_jerry96));
-		items.add(new EntryItem("Pokemon", null, R.drawable.pokemon96));
-		items.add(new EntryItem("Popeye", null, R.drawable.popeye96));
-		items.add(new EntryItem("Oggy", null, R.drawable.oggy96));
-		items.add(new EntryItem("Larva", null, R.drawable.larva96));
-		items.add(new EntryItem("Simon's Cat", null, R.drawable.simon96));
+		items.add(new EntryItem("Looney Tunes", null, R.drawable.highlights));
+		items.add(new EntryItem("The Simpsons", null, R.drawable.highlights));
+		items.add(new EntryItem("Tom and Jerry", null, R.drawable.highlights));
+		items.add(new EntryItem("Pokemon", null, R.drawable.highlights));
+		items.add(new EntryItem("Popeye", null, R.drawable.highlights));
+		items.add(new EntryItem("Oggy", null, R.drawable.highlights));
+		items.add(new EntryItem("Larva", null, R.drawable.highlights));
+		items.add(new EntryItem("Simon's Cat", null, R.drawable.highlights));
 		items.add(new EntryItem("Oscar's Oasis", null,
-				R.drawable.oscars_oasis96));
-		items.add(new EntryItem("Doreamon", null, R.drawable.doraemon96));
-		items.add(new EntryItem("Phineas and Ferb", null, R.drawable.phineas96));
-		items.add(new EntryItem("Walt Disney Kanal", null, R.drawable.walt96));
-		items.add(new EntryItem("Bernard Bear", null, R.drawable.bernard_bear96));
-		items.add(new EntryItem("Disney Cartoon", null, R.drawable.disney96));
-		items.add(new EntryItem("Soundtracks", null, R.drawable.soundtrack96));
+				R.drawable.highlights));
+		items.add(new EntryItem("Doreamon", null, R.drawable.highlights));
+		items.add(new EntryItem("Phineas and Ferb", null, R.drawable.highlights));
+		items.add(new EntryItem("Walt Disney Kanal", null, R.drawable.highlights));
+		items.add(new EntryItem("Bernard Bear", null, R.drawable.highlights));
+		items.add(new EntryItem("Disney Cartoon", null, R.drawable.highlights));
+		items.add(new EntryItem("Soundtracks", null, R.drawable.highlights));
 
 		// Favorites
 		items.add(new SectionItem("My Cartoons"));

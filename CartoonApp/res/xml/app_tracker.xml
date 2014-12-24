@@ -3,7 +3,7 @@
     tools:ignore="TypographyDashes">
 
 <!-- The apps Analytics Tracking Id -->
-<string name="ga_trackingId">UA-56745684-12</string>
+<string name="ga_trackingId">UA-56745684-16</string>
 
 <!-- Percentage of events to include in reports -->
 <string name="ga_sampleFrequency">100.0</string>
@@ -15,13 +15,13 @@
 <bool name="ga_reportUncaughtExceptions">true</bool>
 
 <!-- How long a session exists before giving up -->
-<integer name="ga_sessionTimeout">-1</integer>
+<integer name="ga_sessionTimeout">30</integer>
 
 <!-- If ga_autoActivityTracking is enabled, an alternate screen name can be specified to
 substitute for the full length canonical Activity name in screen view hit. In order to
 specify an alternate screen name use an <screenName> element, with the name attribute
 specifying the canonical name, and the value the alias to use instead. -->
-<screenName name="com.rs.cartoonss.SideMenuActivity">Cartoon Activity</screenName>
+<screenName name="com.rs.dct.SideMenuActivity">Cartoon Activity</screenName>
 
 </resources>
 

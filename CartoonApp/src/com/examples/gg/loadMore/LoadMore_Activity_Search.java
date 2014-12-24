@@ -4,7 +4,7 @@ import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
 import com.actionbarsherlock.widget.SearchView;
 import com.examples.gg.data.CustomSearchView;
-import com.rs.cartoonss.R;
+import com.rs.dct.R;
 
 public class LoadMore_Activity_Search extends LoadMore_Activity_Base
 		implements SearchView.OnQueryTextListener {

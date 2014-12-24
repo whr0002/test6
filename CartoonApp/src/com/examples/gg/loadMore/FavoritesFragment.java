@@ -20,7 +20,7 @@ import com.examples.gg.adapters.VaaForFavorites;
 import com.examples.gg.data.Video;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.rs.cartoonss.R;
+import com.rs.dct.R;
 
 //import com.examples.gg.twitchplayers.VideoBuffer;
 

@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.rs.cartoonss.R;
+import com.rs.dct.R;
 
 public class Dialog_Disclaimer extends DialogPreference{
 
